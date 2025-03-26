@@ -46,7 +46,7 @@ export function NavSupportAndContact() {
                 <SidebarMenu>
                     {supportAndConnectivity.map((item) => (
                         <SidebarMenuItem key={item.title}>
-                            <SidebarMenuButton asChild className={cn("text-muted-foreground font-normal", pathname === item.url && "text-blue-600 bg-blue-50 font-bold hover:bg-blue-100 hover:text-blue-700")}>
+                            <SidebarMenuButton size={"lg"} asChild className={cn("text-muted-foreground font-normal", pathname === item.url && "text-blue-600 bg-blue-50 font-bold hover:bg-blue-100 hover:text-blue-700")}>
                                 <Link href={item.url}>
                                     {<item.icon />}
                                     {item.title}

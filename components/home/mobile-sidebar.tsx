@@ -37,7 +37,7 @@ export default function MobileSidebar() {
                                     <SheetTitle className="sr-only">Profile</SheetTitle>
                                     <Profile />
                                 </SheetHeader>
-                                <div className="grid">
+                                <div className="grid overflow-y-auto">
                                     <NavMain />
                                     <hr className="mx-4" />
                                     <NavLearnAndStudy />
