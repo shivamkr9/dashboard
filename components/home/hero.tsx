@@ -20,7 +20,7 @@ export default function Hero({ }: Props) {
                     <p className='text-muted-foreground font-normal text-2xl'>Let's Achieve Greatness Today!</p>
                 </div>
                 <div className="relative mx-auto">
-                    <Input placeholder="Search.." className=" p-6 pr-[150px] text-2xl focus:ring-0 outline-0 focus-visible:border-0 w-[500px] rounded-full" />
+                    <Input placeholder="Search.." className=" p-6 pr-[150px] text-2xl focus:ring-0 outline-0 focus-visible:border-0 md:w-[500px]  w-full rounded-full" />
                     <div className="absolute top-1 right-2">
                         <Button size={"lg"} className='rounded-full bg-gradient-to-r from-[#9348FE]  to-[#3992FE]'>
                             <Star className='size-4 stroke-background' />
