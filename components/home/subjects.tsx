@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import { Card, CardContent } from "@/components/ui/card"
+import Autoplay from "embla-carousel-autoplay"
 
 export default function Subjects() {
     const subjects = [
@@ -45,6 +46,11 @@ export default function Subjects() {
                 </div>
 
                 <Carousel
+                    plugins={[
+                        Autoplay({
+                            delay: 2000,
+                        }),
+                    ]}
                     opts={{
                         align: "start",
                         loop: true,
